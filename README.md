@@ -25,7 +25,7 @@ This project focuses on enhancing the performance of a natural language processi
   - [Gradient Boosting Regression with Feature Importance](#gradient-boosting-regression-with-feature-importance)
   - [Support Vector Regression (SVR) with Kernel Tricks](#support-vector-regression-svr-with-kernel-tricks)
   - [Neural Network Adjustments](#neural-network-adjustments)
-
+- [Stacking](#stacking)
 ## Text Preprocessing
 
 ### Lowercasing
@@ -97,3 +97,5 @@ This project focuses on enhancing the performance of a natural language processi
 
 ### Neural Network Adjustments
 - Experiment with changing epoch and batch size in neural network training.
+## Stacking
+- Try different merging different methods
