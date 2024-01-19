@@ -159,8 +159,18 @@ R2 Score (CV): 1.0
 ![image](https://github.com/CZunal/CS412-Course-Project/assets/73399460/3fe42047-2963-418c-b1a2-d46f3602cfc3)
 
 
-Experimental findings supported by figures,
-tables etc.
+
+Across the various regression models evaluated in this project, distinct patterns in performance metrics emerge. The Decision Tree Regressor, serving as the baseline model, demonstrates exceptional training set performance with an impressively low Mean Squared Error (MSE) of 0.1147 and an almost perfect R-squared (R2) score of 0.9993. However, this model exhibits a notable drop in performance on the test set, suggesting potential overfitting.
+
+Similarly, the Ada Boost Regressor shows competitive training set results with an MSE of 0.7161 and an R2 score of 0.9956. Yet, similar to the Decision Tree Regressor, there is a decrease in performance on the test set, indicating challenges in generalizing to new data.
+
+In contrast, the Neural Network demonstrates relatively consistent performance between the training and test sets, with an MSE of 8.6942 and 8.9419, and R2 scores of 0.9468 and 0.9204, respectively. This suggests a more balanced model in terms of fitting to the training data while maintaining a good level of generalization.
+
+Both Lasso and Ridge Regressions showcase remarkable precision, achieving near-zero MSE values for both training and test sets, with R2 scores close to 1.0. This implies an excellent fit to the data, demonstrating the effectiveness of regularization techniques in preventing overfitting.
+
+The Support Vector Regressor (SVR) presents a similar trend, with low MSE and high R2 scores for both training and test sets. Additionally, cross-validation further substantiates the SVR's robust performance.
+
+In summary, while certain models exhibit outstanding fits to the training data, ensuring robust generalization to unseen data remains a challenge. This underscores the importance of model selection, hyperparameter tuning, and further exploration of ensemble methods to improve overall predictive performance.
 
 ### Team contributions
 Each team member created branches
