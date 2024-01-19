@@ -30,6 +30,5 @@ This project focuses on enhancing the performance of a natural language processi
 ### Results
 - Mean Square Error: 7.209050111588801e-28
 - R2 Score: 1.0
-- Performance Graph:
 ![image](https://github.com/CZunal/CS412-Course-Project/assets/73399460/717978b1-62a7-48e5-964e-79d98e08e7a0)
 
