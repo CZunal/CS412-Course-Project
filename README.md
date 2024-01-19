@@ -25,7 +25,7 @@ This project focuses on enhancing the performance of a natural language processi
 - AdaBoost focuses on combining multiple weak learners (simple models) to form a strong learner.
 - The key idea behind AdaBoost is to focus on the weaknesses of individual models and give more weight to the observations that are misclassified by previous models. 
 - This iterative process helps improve overall model performance.
-- 
+  
 ### Results
 - The AdaBoost model was trained and evaluated, producing the following results:
 
