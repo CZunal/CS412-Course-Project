@@ -78,38 +78,17 @@ High-level explanation of things considered and solutions offered.
 
 ### Results
 
-#### Decision Tree Regressor
+Ranked by Test R2 Square Values
+
+
+#### Decision Tree Regressor (Baseline)
 ```plaintext
 MSE Train: 0.11475208640157092
 MSE TEST: 11.900277777777779
 R2 Train: 0.9992978102674439
 R2 TEST: 0.8939988938928952
 ```
-
 ![image](https://github.com/CZunal/CS412-Course-Project/blob/3ee3c2372f996587645f278e379e176d1da23822/dr_mse_plot.png)
-#### Neural Network
-```plaintext
-MSE Train: 8.6942377150357
-MSE TEST: 8.94185264789965
-R2 Train: 0.9467983141105091
-R2 TEST: 0.9203509120523148
-```
-![image](https://github.com/CZunal/CS412-Course-Project/blob/af26ca9fce6b2e078d94326f56ac75612949a1eb/nn_mse_plot.png)
-
-#### Linear Regression
-```plaintext
-Mean Squared Error(Train): 7.032085026046438e-28
-Mean Squared Error(Test): 1.211690350419474e-28
-R2 Score(Train): 1.0
-R2 Score(Test): 1.0
-
-Cross-Validated Performance:
-Mean Squared Error (CV): 7.209050111588801e-28
-R2 Score (CV): 1.0
-```
-![image](https://github.com/CZunal/CS412-Course-Project/assets/73399460/d1ae4666-25b1-45f0-afb1-a981305b9358)
-
-![image](https://github.com/CZunal/CS412-Course-Project/assets/73399460/3fe42047-2963-418c-b1a2-d46f3602cfc3)
 
 #### Ada Boost Regressor
 ```plaintext
@@ -119,6 +98,16 @@ R2 Train: 0.9956182909000579
 R2 TEST: 0.8871784839621872
 ```
 ![image](https://github.com/CZunal/CS412-Course-Project/blob/a64c40a4f41143956fe6021969c5053794ed2f14/output.png)
+
+#### Neural Network
+```plaintext
+MSE Train: 8.6942377150357
+MSE TEST: 8.94185264789965
+R2 Train: 0.9467983141105091
+R2 TEST: 0.9203509120523148
+```
+![image](https://github.com/CZunal/CS412-Course-Project/blob/af26ca9fce6b2e078d94326f56ac75612949a1eb/nn_mse_plot.png)
+
 
 #### Lasso Regression
 ```plaintext
@@ -152,6 +141,21 @@ R2 Score (CV): 0.999024242555844
 ![image](https://github.com/CZunal/CS412-Course-Project/assets/73399460/b2d043f9-13a6-4639-a52d-b82c28469553)
 
 ![image](https://github.com/CZunal/CS412-Course-Project/assets/73399460/fba93847-bc32-407b-81d9-05f6df8b3cb0)
+
+#### Linear Regression
+```plaintext
+Mean Squared Error(Train): 7.032085026046438e-28
+Mean Squared Error(Test): 1.211690350419474e-28
+R2 Score(Train): 1.0
+R2 Score(Test): 1.0
+
+Cross-Validated Performance:
+Mean Squared Error (CV): 7.209050111588801e-28
+R2 Score (CV): 1.0
+```
+![image](https://github.com/CZunal/CS412-Course-Project/assets/73399460/d1ae4666-25b1-45f0-afb1-a981305b9358)
+
+![image](https://github.com/CZunal/CS412-Course-Project/assets/73399460/3fe42047-2963-418c-b1a2-d46f3602cfc3)
 
 
 Experimental findings supported by figures,
