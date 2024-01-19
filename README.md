@@ -28,6 +28,9 @@ This project focuses on enhancing the performance of a natural language processi
 
 - The iterative and boosting nature of XGBoost makes it well-suited for capturing complex relationships within the data while mitigating overfitting. The provided code not only trains the model but also evaluates its performance through cross-validation, contributing to a more comprehensive understanding of its predictive capabilities.
 
+### Results
+- The GradientBoosting model was trained and evaluated, producing the following results:
+
 ```plaintext
 Cross-Validation R2 Scores: [0.99046837 0.66777219 0.55252456 0.97269405 0.79382785]
 Mean R2 Score: 0.7954574044560845
@@ -41,3 +44,61 @@ XGBoost - R2 TEST: 0.7298333288660587
 - These metrics provide insights into the model's performance on both the training and test sets. The Mean Squared Error (MSE) values indicate the average squared difference between predicted and actual values, while the R-squared (R2) values measure the proportion of variance explained by the model.
 
 - The achieved R2 scores, particularly 0.9999 for the training set and 0.729 for the test set, demonstrate a high level of predictive accuracy. These results suggest that the AdaBoost model effectively captures the relationships within the data, providing reliable predictions.
+
+
+![MSE Plot](output.png)
+### Codes
+
+```python
+
+import xgboost as xgb
+from sklearn.model_selection import cross_val_score, KFold
+from sklearn.metrics import mean_squared_error, r2_score
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Assuming you have already loaded your data and split it into X_train, X_test, y_train, and y_test
+
+# Create XGBoost model
+xgb_model = xgb.XGBRegressor(objective='reg:squarederror', n_estimators=100, learning_rate=0.1, random_state=42)
+
+# Combine your training and test sets for cross-validation
+X_combined = np.concatenate((X_train, X_test), axis=0)
+y_combined = np.concatenate((y_train, y_test), axis=0)
+
+# Set up K-fold cross-validation
+kf = KFold(n_splits=5, shuffle=True, random_state=42)
+
+# Perform cross-validation
+cv_results = cross_val_score(xgb_model, X_combined, y_combined, cv=kf, scoring='r2')
+
+# Print cross-validation results
+print("Cross-Validation R2 Scores:", cv_results)
+print("Mean R2 Score:", np.mean(cv_results))
+
+# Fit the model to the training data
+xgb_model.fit(X_train, y_train)
+
+# Prediction
+y_train_pred_xgb = xgb_model.predict(X_train)
+y_test_pred_xgb = xgb_model.predict(X_test)
+
+# Calculation of Mean Squared Error (MSE)
+print("XGBoost - MSE Train:", mean_squared_error(y_train, y_train_pred_xgb))
+print("XGBoost - MSE TEST:", mean_squared_error(y_test, y_test_pred_xgb))
+
+print("XGBoost - R2 Train:", r2_score(y_train, y_train_pred_xgb))
+print("XGBoost - R2 TEST:", r2_score(y_test, y_test_pred_xgb))
+
+# Plot actual vs. predicted values with diagonal line
+plt.scatter(y_test, y_test_pred_xgb, alpha=0.7, label='Actual vs. Predicted (XGBoost)')
+plt.plot(np.linspace(min(y_test), max(y_test), 100), np.linspace(min(y_test), max(y_test), 100), '--', color='blue', label='Diagonal Line (y=x)')
+
+plt.xlabel("Actual Grades")
+plt.ylabel("Predicted Grades")
+plt.title("Actual vs. Predicted Grades using XGBoost Regression")
+plt.legend()
+plt.show()
+
+```
+
