@@ -28,8 +28,41 @@ This project focuses on enhancing the performance of a natural language processi
 - The simplicity of Linear Regression makes it interpretable, helping to identify the most influential features on the predicted grades.
 
 ### Results
-- Mean Square Error: 7.209050111588801e-28
-- R2 Score: 1.0
-  
-![image](https://github.com/CZunal/CS412-Course-Project/assets/73399460/717978b1-62a7-48e5-964e-79d98e08e7a0)
+- The Linear Regression model was trained and evaluated, producing the following performance metrics:
+```plaintext
+Mean Squared Error(Train): 7.032085026046438e-28
+Mean Squared Error(Test): 1.211690350419474e-28
+R2 Score(Train): 1.0
+R2 Score(Test): 1.0
 
+Cross-Validated Performance:
+Mean Squared Error (CV): 7.209050111588801e-28
+R2 Score (CV): 1.0
+```
+- The Mean Squared Error (MSE) values, being extremely close to zero, indicate very low prediction errors. In the context of R2 scores, a perfect score of 1.0 suggests that the model precisely predicts the target variable.
+- These results imply that the Linear Regression model fits the data exceptionally well, both in the training and test sets. The cross-validated performance reinforces the model's robustness, indicating its ability to generalize effectively to different subsets of the training data.
+- It's crucial to note that such perfect scores might raise concerns about overfitting, especially if the dataset is small or the model is overly complex.
+  
+![image](https://github.com/CZunal/CS412-Course-Project/assets/73399460/d1ae4666-25b1-45f0-afb1-a981305b9358)
+
+![image](https://github.com/CZunal/CS412-Course-Project/assets/73399460/3fe42047-2963-418c-b1a2-d46f3602cfc3)
+
+### Code
+```python
+# Create a linear regression model
+model = LinearRegression()
+
+# Train the model
+model.fit(X_train, y_train)
+
+# Make predictions on the train set
+y_train_pred = model.predict(X_train)
+
+# Make predictions on the test set
+y_test_pred = model.predict(X_test)
+
+# Evaluate the model
+mse_train = mean_squared_error(y_train, y_train_pred)
+r2_train = r2_score(y_train, y_train_pred)
+mse_test = mean_squared_error(y_test, y_test_pred)
+r2_test = r2_score(y_test, y_test_pred)
