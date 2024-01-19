@@ -5,8 +5,8 @@
 This project focuses on enhancing the performance of a natural language processing (NLP) model for analyzing and predicting scores based on prompts. The primary goal is to explore various techniques related to text preprocessing, feature engineering, model tuning, and experimenting with different models.
 
 ## Contributors
-- Fikret Kayra Yilmaz
-- Gorkem Topcu
+- Fikret Kayra Yilmaz 29371
+- Gorkem Topcu 28862
 
 ## Table of Contents
 - [Linear Regression](#linear-regression)
