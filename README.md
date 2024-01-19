@@ -14,7 +14,7 @@ This project focuses on enhancing the performance of a natural language processi
   - [Results](#results)
   - [Codes](#codes)
 
-## Neural Network
+## AdaBoost
 
 ### Model Training
 - The code employs an AdaBoost model for predicting student grades based on prompts.
@@ -40,7 +40,7 @@ R2 TEST: 0.8871784839621872
 
 - The achieved R2 scores, particularly 0.9956 for the training set and 0.8871 for the test set, demonstrate a high level of predictive accuracy. These results suggest that the AdaBoost model effectively captures the relationships within the data, providing reliable predictions.
 
-![MSE Plot](nn_mse_plot.png)
+![MSE Plot](output.png)
 ### Codes
 
 ```python
