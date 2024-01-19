@@ -21,6 +21,7 @@ This project focuses on enhancing the performance of a natural language processi
     - [Lasso Regression](#lasso-regression)
     - [Ridge Regression](#ridge-regression)
     - [Support Vector Regressor](#support-vector-regressor)
+    - [Gradient Boosting Regression](#gradient-boosting-regressor)
   - [Results](#results)
     - [Decision Tree Regressor](#decision-tree-regressor-1)
     - [Ada Boost Regressor](#ada-boost-regressor-1)
@@ -29,6 +30,7 @@ This project focuses on enhancing the performance of a natural language processi
     - [Ridge Regression](#ridge-regression-1)
     - [Support Vector Regressor](#support-vector-regressor-1)
     - [Linear Regression](#linear-regression-1)
+    - [Gradient Boosting Regression](#gradient-boosting-regressor-1)
 
   - [Team contributions](#team-contributions)
 
@@ -74,8 +76,12 @@ Each team member created model specific branch for evaluating different models p
 - The program utilizes Support Vector Regressor (SVR), specifically with a linear kernel and C=1.0, for predicting student grades based on input features.
 - The SVR model is trained on a subset of the data (X_train and y_train) and evaluated on both the training and test sets.
 - Cross-validation is applied to obtain more reliable performance metrics, considering different subsets of the training data.
-  
+
+#### Gradient Boosting Regressor
+- Gradient Boosting Regressor is an ensemble learning technique that sequentially combines weak learners to form a robust predictive model.
 High-level explanation of things considered and solutions offered.
+- This method excels in capturing complex relationships and non-linear patterns in the data, making it a powerful tool for predicting numeric values.
+- The iterative nature and adaptability of Gradient Boosting Regressor make it versatile for various predictive modeling scenarios.
 
 ### Results
 
@@ -158,6 +164,18 @@ R2 Score (CV): 1.0
 
 ![image](https://github.com/CZunal/CS412-Course-Project/assets/73399460/3fe42047-2963-418c-b1a2-d46f3602cfc3)
 
+
+#### Gradient Boosting Regression
+```plaintext
+XGBoost - MSE Train: 0.0021904191782652427
+XGBoost - MSE TEST: 30.330423434854602
+XGBoost - R2 Train: 0.9999865964105298
+XGBoost - R2 TEST: 0.7298333288660587
+
+Cross-Validation R2 Scores: [0.99046837 0.66777219 0.55252456 0.97269405 0.79382785]
+Mean R2 Score: 0.7954574044560845
+```
+![image](https://github.com/CZunal/CS412-Course-Project/blob/Gradient-Boosting-Regression/output.png)
 
 
 Across the various regression models evaluated in this project, distinct patterns in performance metrics emerge. The Decision Tree Regressor, serving as the baseline model, demonstrates exceptional training set performance with an impressively low Mean Squared Error (MSE) of 0.1147 and an almost perfect R-squared (R2) score of 0.9993. However, this model exhibits a notable drop in performance on the test set, suggesting potential overfitting.
