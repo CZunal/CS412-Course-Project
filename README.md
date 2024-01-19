@@ -23,12 +23,13 @@ This project focuses on enhancing the performance of a natural language processi
     - [Support Vector Regressor](#support-vector-regressor)
   - [Results](#results)
     - [Decision Tree Regressor](#decision-tree-regressor-1)
-    - [Neural Network](#neural-network-1)
-    - [Linear Regression](#linear-regression-1)
     - [Ada Boost Regressor](#ada-boost-regressor-1)
+    - [Neural Network](#neural-network-1)
     - [Lasso Regression](#lasso-regression-1)
     - [Ridge Regression](#ridge-regression-1)
     - [Support Vector Regressor](#support-vector-regressor-1)
+    - [Linear Regression](#linear-regression-1)
+
   - [Team contributions](#team-contributions)
 
   
