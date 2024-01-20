@@ -30,16 +30,13 @@ This project focuses on enhancing the performance of a natural language processi
 - The Decision Tree Regressor model was trained and evaluated, producing the following results:
 
 ```plaintext
-MSE Train: 0.11475208640157092
-MSE TEST: 11.900277777777779
-R2 Train: 0.9992978102674439
-R2 TEST: 0.8939988938928952
+MSE Train: 23.792569028909234
+MSE TEST: 123.90309194337131
+R2 Train: 0.8544087675690079
+R2 TEST: -0.1036603549383901
 ```
 
-In the training set, the MSE is remarkably low at 0.1147, indicating that the model fits the training data very well. However, on the test set, the MSE is higher at 11.9003, suggesting a somewhat higher level of prediction error. This discrepancy could be indicative of the model's potential overfitting to the training data.
-
-
-The R-squared score represents the proportion of variance in the dependent variable (grades) explained by the model. A score of 1.0 indicates a perfect fit. In the training set, the R2 score is exceptionally high at 0.9993, suggesting an almost perfect fit to the training data. However, on the test set, the R2 score is 0.894, indicating a very good fit but slightly less explanatory power compared to the training set.
+The R-squared score represents the proportion of variance in the dependent variable (grades) explained by the model. A score of 1.0 indicates a perfect fit. In the training set, the R2 score is exceptionally high at 0.8544087675690079, suggesting an almost perfect fit to the training data. However, on the test set, the R2 score is -0.1036603549383901.
 
 In summary, while the Decision Tree Regressor demonstrates outstanding performance on the training set, there is a noticeable drop in performance on the test set, suggesting the need for further investigation into potential overfitting and generalization issues.
 
