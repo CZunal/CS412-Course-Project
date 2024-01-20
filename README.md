@@ -32,23 +32,19 @@ This project focuses on enhancing the performance of a natural language processi
 ### Results
 - The Support Vector Regressor model was trained and evaluated, producing the following results:
 ```plaintext
-Mean Squared Error(Train): 0.005130020227711553
-Mean Squared Error(Test): 0.0047693131526653386
-R2 Score(Train): 0.99995751759085
-R2 Score(Test): 0.99995751759085
-
-Cross-Validated Performance (SVR):
-Mean Squared Error (CV): 0.15945861545308992
-R2 Score (CV): 0.999024242555844
+Test Set Performance (SVR):
+Mean Squared Error(Train): 129.45437423099355
+Mean Squared Error(Test): 122.81119238753843
+R2 Score(Train): -0.09393431636706562
+R2 Score(Test): -0.09393431636706562
 ```
 
-- The Mean Squared Error (MSE) values measure the average squared difference between predicted and actual grades. Lower MSE values indicate better model performance. The R2 scores represent the proportion of variance explained by the model, with values closer to 1 indicating a high level of predictive accuracy.
+- MSE measures the average squared difference between predicted and actual values. In this case, the relatively high MSE values suggest that the SVR model struggles to make accurate predictions, indicating a substantial amount of error.
+- The R2 score represents the proportion of variance in the target variable explained by the model. A negative R2 score indicates that the model performs poorly and provides worse predictions than a simple mean-based predictor.
 
-- The SVR model exhibits exceptional performance on both the training and test sets, with very low MSE and high R2 scores. This suggests that the SVR model effectively captures the underlying patterns in the data, providing accurate predictions. The cross-validated results further validate the model's robustness, indicating its ability to generalize well to different subsets of the training data.
+![Alt text](image.png)
 
-![image](https://github.com/CZunal/CS412-Course-Project/assets/73399460/b2d043f9-13a6-4639-a52d-b82c28469553)
-
-![image](https://github.com/CZunal/CS412-Course-Project/assets/73399460/fba93847-bc32-407b-81d9-05f6df8b3cb0)
+![Alt text](image-1.png)
 
 ### Code
 ```python
