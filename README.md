@@ -108,12 +108,12 @@ R2 TEST: 0.10974221206435131
 
 #### Neural Network
 ```plaintext
-MSE Train: 8.6942377150357
-MSE TEST: 8.94185264789965
-R2 Train: 0.9467983141105091
-R2 TEST: 0.9203509120523148
+MSE Train: 54.67724691269477
+MSE TEST: 111.86605245506158
+R2 Train: 0.6654195789332196
+R2 TEST: 0.0035589490007483793
 ```
-![image](https://github.com/CZunal/CS412-Course-Project/blob/af26ca9fce6b2e078d94326f56ac75612949a1eb/nn_mse_plot.png)
+![image](https://github.com/CZunal/CS412-Course-Project/blob/1f1ea7d8a20b2a323b148354454f0796be208ea3/nn_mse_plot.png)
 
 
 #### Lasso Regression
