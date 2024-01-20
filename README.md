@@ -30,10 +30,10 @@ This project focuses on enhancing the performance of a natural language processi
 - The AdaBoost model was trained and evaluated, producing the following results:
 
 ```plaintext
-MSE Train: 0.7160604006452509
-MSE TEST: 12.665975190894672
-R2 Train: 0.9956182909000579
-R2 TEST: 0.8871784839621872
+MSE Train: 23.512951460074028
+MSE TEST: 99.94532471726836
+R2 Train: 0.856119800387978
+R2 TEST: 0.10974221206435131
 ```
 
 - These metrics provide insights into the model's performance on both the training and test sets. The Mean Squared Error (MSE) values indicate the average squared difference between predicted and actual values, while the R-squared (R2) values measure the proportion of variance explained by the model.
