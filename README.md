@@ -30,22 +30,17 @@ This project focuses on enhancing the performance of a natural language processi
 ### Results
 - The Linear Regression model was trained and evaluated, producing the following performance metrics:
 ```plaintext
-Mean Squared Error(Train): 7.032085026046438e-28
-Mean Squared Error(Test): 1.211690350419474e-28
-R2 Score(Train): 1.0
-R2 Score(Test): 1.0
-
-Cross-Validated Performance:
-Mean Squared Error (CV): 7.209050111588801e-28
-R2 Score (CV): 1.0
+Mean Squared Error(Train): 100.87553202163336
+Mean Squared Error(Test): 135.36989735207453
+R2 Score(Train): 0.3827235297156596
+R2 Score(Test): -0.20580032843608853
 ```
-- The Mean Squared Error (MSE) values, being extremely close to zero, indicate very low prediction errors. In the context of R2 scores, a perfect score of 1.0 suggests that the model precisely predicts the target variable.
-- These results imply that the Linear Regression model fits the data exceptionally well, both in the training and test sets. The cross-validated performance reinforces the model's robustness, indicating its ability to generalize effectively to different subsets of the training data.
-- It's crucial to note that such perfect scores might raise concerns about overfitting, especially if the dataset is small or the model is overly complex.
+- Mean Squared Error (MSE) is a measure of the average squared difference between the predicted and actual values. For the training set, the MSE is 100.88, and for the test set, it is 135.37. These values suggest a relatively high level of error in the model's predictions.
+- R-squared (R2) score represents the proportion of variance in the target variable that is explained by the model. A positive R2 score indicates that the model explains some of the variability in the data. For the training set, the R2 score is 0.38, suggesting that the model captures a portion of the variance. However, for the test set, the R2 score is negative (-0.21), indicating that the model performs worse than a simple mean-based predictor.
   
-![image](https://github.com/CZunal/CS412-Course-Project/assets/73399460/d1ae4666-25b1-45f0-afb1-a981305b9358)
+![Alt text](image.png)
 
-![image](https://github.com/CZunal/CS412-Course-Project/assets/73399460/3fe42047-2963-418c-b1a2-d46f3602cfc3)
+![Alt text](image-1.png)
 
 ### Code
 ```python
