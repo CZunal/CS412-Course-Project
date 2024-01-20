@@ -95,7 +95,7 @@ MSE TEST: 123.90309194337131
 R2 Train: 0.8544087675690079
 R2 TEST: -0.1036603549383901
 ```
-![image](https://github.com/CZunal/CS412-Course-Project/blob/3ee3c2372f996587645f278e379e176d1da23822/dr_mse_plot.png)
+![image](https://github.com/CZunal/CS412-Course-Project/blob/39063fc474ace31de8bed9df1016470ed848f8e8/dr_mse_plot.png)
 
 #### Ada Boost Regressor
 ```plaintext
@@ -104,7 +104,7 @@ MSE TEST: 99.94532471726836
 R2 Train: 0.856119800387978
 R2 TEST: 0.10974221206435131
 ```
-![image](https://github.com/CZunal/CS412-Course-Project/blob/a64c40a4f41143956fe6021969c5053794ed2f14/output.png)
+![image](https://github.com/CZunal/CS412-Course-Project/blob/e52e999f4f3fba64306f507734d3b9319c6ab48d/output.png)
 
 #### Neural Network
 ```plaintext
@@ -123,7 +123,7 @@ MSE TEST: 109.24607685765808
 R2 Train: 0.2544088672174103
 R2 TEST: 0.026896245531506602
 ```
-![image](https://github.com/CZunal/CS412-Course-Project/blob/8b0544d5d384d382702e46e777792d4960c0c24c/output.png)
+![image](https://github.com/CZunal/CS412-Course-Project/blob/fc21d4efb5bcd165b7d25283df46c763aeee6e9a/output.png)
 
 #### Ridge Regression
 ```plaintext
@@ -132,7 +132,7 @@ MSE TEST: 123.8936916254293
 R2 Train: 0.37317035610834226
 R2 TEST: -0.10357662209465146
 ```
-![image](https://github.com/CZunal/CS412-Course-Project/blob/623c1c80f172ee9cd61c830be71572eea5ddb623/output.png)
+![image](https://github.com/CZunal/CS412-Course-Project/blob/c197a960845540069640de409db6107d393cfb15/output.png)
 
 #### Support Vector Regressor
 ```plaintext
@@ -162,7 +162,7 @@ R2 Score (CV): -3.553624297618481
 ```
 ![image](https://github.com/CZunal/CS412-Course-Project/assets/73399460/d1ae4666-25b1-45f0-afb1-a981305b9358)
 
-![image](https://github.com/CZunal/CS412-Course-Project/assets/73399460/3fe42047-2963-418c-b1a2-d46f3602cfc3)
+![image](https://github.com/CZunal/CS412-Course-Project/blob/c45edb6916dcb1d122405f794d591b70183f2174/image.png)
 
 
 #### Gradient Boosting Regression
@@ -175,7 +175,7 @@ XGBoost - R2 TEST: -0.26243072846869375
 Cross-Validation R2 Scores: [-1.10587873 -0.13118338 -8.12836632 -0.51004095 -1.72988704]
 Mean R2 Score: -2.3210712836062344
 ```
-![image](https://github.com/CZunal/CS412-Course-Project/blob/Gradient-Boosting-Regression/output.png)
+![image](https://github.com/CZunal/CS412-Course-Project/blob/d0a5368e39d8de3fbf3582796b1494bb7829f7fc/output.png)
 
 
 Across the various regression models evaluated in this project, distinct patterns in performance metrics emerge. The Decision Tree Regressor, serving as the baseline model, demonstrates exceptional training set performance with an impressively low Mean Squared Error (MSE) of 0.1147 and an almost perfect R-squared (R2) score of 0.9993. However, this model exhibits a notable drop in performance on the test set, suggesting potential overfitting.
