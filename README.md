@@ -32,10 +32,10 @@ This project focuses on enhancing the performance of a natural language processi
 - The Neural Network model was trained and evaluated, producing the following results:
 
 ```plaintext
-MSE Train: 8.6942377150357
-MSE TEST: 8.94185264789965
-R2 Train: 0.9467983141105091
-R2 TEST: 0.9203509120523148
+MSE Train: 23.792569028909234
+MSE TEST: 123.90309194337131
+R2 Train: 0.8544087675690079
+R2 TEST: -0.1036603549383901s
 ```
 
 - These metrics provide insights into the model's performance on both the training and test sets. The Mean Squared Error (MSE) values indicate the average squared difference between predicted and actual values, while the R-squared (R2) values measure the proportion of variance explained by the model.
