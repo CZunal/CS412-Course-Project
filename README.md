@@ -99,12 +99,12 @@ R2 TEST: -0.1036603549383901
 
 #### Ada Boost Regressor
 ```plaintext
-MSE Train: 23.512951460074028
-MSE TEST: 99.94532471726836
-R2 Train: 0.856119800387978
-R2 TEST: 0.10974221206435131
+MSE Train: 22.930279420638666
+MSE TEST: 89.46055654828596
+R2 Train: 0.859685280863054
+R2 TEST: 0.20313473986433983
 ```
-![image](https://github.com/CZunal/CS412-Course-Project/blob/e52e999f4f3fba64306f507734d3b9319c6ab48d/output.png)
+![image](https://github.com/CZunal/CS412-Course-Project/assets/73399460/90445e86-9743-4b19-b04c-1fc1c14e6568)
 
 #### Neural Network
 ```plaintext
@@ -140,14 +140,10 @@ Mean Squared Error(Train): 129.45437423099355
 Mean Squared Error(Test): 122.81119238753843
 R2 Score(Train): -0.09393431636706562
 R2 Score(Test): -0.09393431636706562
-
-Cross-Validated Performance (SVR):
-Mean Squared Error (CV): 495.71812899949924
-R2 Score (CV): -2.0333930418245107
 ```
-![image](https://github.com/CZunal/CS412-Course-Project/assets/73399460/b2d043f9-13a6-4639-a52d-b82c28469553)
 
-![image](https://github.com/CZunal/CS412-Course-Project/assets/73399460/fba93847-bc32-407b-81d9-05f6df8b3cb0)
+![image](https://github.com/CZunal/CS412-Course-Project/assets/73399460/f5e9a157-f959-47a8-b975-4538139e6fb5)
+
 
 #### Linear Regression
 ```plaintext
