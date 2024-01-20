@@ -36,11 +36,11 @@ R2 Train: 0.856119800387978
 R2 TEST: 0.10974221206435131
 ```
 
-- These metrics provide insights into the model's performance on both the training and test sets. The Mean Squared Error (MSE) values indicate the average squared difference between predicted and actual values, while the R-squared (R2) values measure the proportion of variance explained by the model.
+- The MSE measures the average squared difference between predicted and actual values. A lower MSE indicates better performance. The training MSE is relatively low, suggesting that the model fits well to the training data. However, the higher test MSE indicates that the model may not generalize as well to unseen data.
 
-- The achieved R2 scores, particularly 0.9956 for the training set and 0.8871 for the test set, demonstrate a high level of predictive accuracy. These results suggest that the AdaBoost model effectively captures the relationships within the data, providing reliable predictions.
+- The R2 score represents the proportion of the variance in the dependent variable (target) that is predictable from the independent variables (features). An R2 score closer to 1 indicates a good fit. In this case, the training R2 is relatively high, suggesting that the model explains a significant portion of the variance in the training data. However, the lower test R2 indicates that the model's performance on unseen data is limited.
 
-![MSE Plot](output.png)
+![Alt text](image.png)
 ### Codes
 
 ```python
