@@ -160,7 +160,7 @@ Cross-Validated Performance:
 Mean Squared Error (CV): 744.1548410832953
 R2 Score (CV): -3.553624297618481
 ```
-![image](https://github.com/CZunal/CS412-Course-Project/assets/73399460/d1ae4666-25b1-45f0-afb1-a981305b9358)
+![image](https://github.com/CZunal/CS412-Course-Project/blob/c45edb6916dcb1d122405f794d591b70183f2174/image-1.png)
 
 ![image](https://github.com/CZunal/CS412-Course-Project/blob/c45edb6916dcb1d122405f794d591b70183f2174/image.png)
 
