@@ -32,10 +32,10 @@ This project focuses on enhancing the performance of a natural language processi
 - The Neural Network model was trained and evaluated, producing the following results:
 
 ```plaintext
-MSE Train: 23.792569028909234
-MSE TEST: 123.90309194337131
-R2 Train: 0.8544087675690079
-R2 TEST: -0.1036603549383901s
+MSE Train: 54.67724691269477
+MSE TEST: 111.86605245506158
+R2 Train: 0.6654195789332196
+R2 TEST: 0.0035589490007483793
 ```
 
 - These metrics provide insights into the model's performance on both the training and test sets. The Mean Squared Error (MSE) values indicate the average squared difference between predicted and actual values, while the R-squared (R2) values measure the proportion of variance explained by the model.
@@ -46,10 +46,11 @@ R2 TEST: -0.1036603549383901s
 ### Codes
 
 ```python
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, Dropout
+from keras.models import Sequential
+from keras.layers import Dense, Dropout
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import mean_squared_error, r2_score
+import matplotlib.pyplot as plt
 
 # Normalize/Scale input features
 scaler = StandardScaler()
@@ -58,9 +59,9 @@ X_test_scaled = scaler.transform(X_test)
 
 # Define a more complex model architecture with dropout and regularization
 model = Sequential()
-model.add(Dense(128, activation='relu', input_shape=(X_train.shape[1],)))
+model.add(Dense(128, activation='sigmoid', input_shape=(X_train.shape[1],)))
 model.add(Dropout(0.5))  # Adding dropout for regularization
-model.add(Dense(64, activation='relu', kernel_regularizer='l2'))
+model.add(Dense(64, activation='sigmoid', kernel_regularizer='l2'))
 model.add(Dropout(0.5))  # Adding another dropout layer
 model.add(Dense(1, activation='linear'))
 
@@ -68,7 +69,7 @@ model.add(Dense(1, activation='linear'))
 model.compile(optimizer='adam', loss='mean_squared_error', metrics=['mse'])
 
 # Fit the model without early stopping and model checkpointing
-history = model.fit(X_train_scaled, y_train, epochs=10000, batch_size=32, validation_data=(X_test_scaled, y_test))
+history = model.fit(X_train_scaled, y_train, epochs=2000, batch_size=32, validation_data=(X_test_scaled, y_test))
 
 # Plotting the training and validation MSE over epochs
 plt.figure(figsize=(12, 6))
