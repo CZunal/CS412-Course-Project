@@ -90,19 +90,19 @@ Ranked by Test R2 Square Values
 
 #### Decision Tree Regressor (Baseline)
 ```plaintext
-MSE Train: 0.11475208640157092
-MSE TEST: 11.900277777777779
-R2 Train: 0.9992978102674439
-R2 TEST: 0.8939988938928952
+MSE Train: 23.792569028909234
+MSE TEST: 123.90309194337131
+R2 Train: 0.8544087675690079
+R2 TEST: -0.1036603549383901
 ```
 ![image](https://github.com/CZunal/CS412-Course-Project/blob/3ee3c2372f996587645f278e379e176d1da23822/dr_mse_plot.png)
 
 #### Ada Boost Regressor
 ```plaintext
-MSE Train: 0.7160604006452509
-MSE TEST: 12.665975190894672
-R2 Train: 0.9956182909000579
-R2 TEST: 0.8871784839621872
+MSE Train: 23.512951460074028
+MSE TEST: 99.94532471726836
+R2 Train: 0.856119800387978
+R2 TEST: 0.10974221206435131
 ```
 ![image](https://github.com/CZunal/CS412-Course-Project/blob/a64c40a4f41143956fe6021969c5053794ed2f14/output.png)
 
@@ -118,32 +118,32 @@ R2 TEST: 0.9203509120523148
 
 #### Lasso Regression
 ```plaintext
-MSE Train: 0.0018853801435518567
-MSE TEST: 0.001653435732602358
-R2 Train: 0.9999884630021093
-R2 TEST: 0.9999852721071049
+MSE Train: 121.84475807965048
+MSE TEST: 109.24607685765808
+R2 Train: 0.2544088672174103
+R2 TEST: 0.026896245531506602
 ```
 ![image](https://github.com/CZunal/CS412-Course-Project/blob/8b0544d5d384d382702e46e777792d4960c0c24c/output.png)
 
 #### Ridge Regression
 ```plaintext
-MSE Train: 2.414411922772e-07
-MSE TEST: 2.920148371051739e-07
-R2 Train: 0.9999999985225757
-R2 TEST: 0.999999997398893
+MSE Train: 102.43671492188103
+MSE TEST: 123.8936916254293
+R2 Train: 0.37317035610834226
+R2 TEST: -0.10357662209465146
 ```
 ![image](https://github.com/CZunal/CS412-Course-Project/blob/623c1c80f172ee9cd61c830be71572eea5ddb623/output.png)
 
 #### Support Vector Regressor
 ```plaintext
-Mean Squared Error(Train): 0.005130020227711553
-Mean Squared Error(Test): 0.0047693131526653386
-R2 Score(Train): 0.99995751759085
-R2 Score(Test): 0.99995751759085
+Mean Squared Error(Train): 129.45437423099355
+Mean Squared Error(Test): 122.81119238753843
+R2 Score(Train): -0.09393431636706562
+R2 Score(Test): -0.09393431636706562
 
 Cross-Validated Performance (SVR):
-Mean Squared Error (CV): 0.15945861545308992
-R2 Score (CV): 0.999024242555844
+Mean Squared Error (CV): 495.71812899949924
+R2 Score (CV): -2.0333930418245107
 ```
 ![image](https://github.com/CZunal/CS412-Course-Project/assets/73399460/b2d043f9-13a6-4639-a52d-b82c28469553)
 
@@ -151,14 +151,14 @@ R2 Score (CV): 0.999024242555844
 
 #### Linear Regression
 ```plaintext
-Mean Squared Error(Train): 7.032085026046438e-28
-Mean Squared Error(Test): 1.211690350419474e-28
-R2 Score(Train): 1.0
-R2 Score(Test): 1.0
+Mean Squared Error(Train): 100.87553202163336
+Mean Squared Error(Test): 135.36989735207453
+R2 Score(Train): 0.3827235297156596
+R2 Score(Test): -0.20580032843608853
 
 Cross-Validated Performance:
-Mean Squared Error (CV): 7.209050111588801e-28
-R2 Score (CV): 1.0
+Mean Squared Error (CV): 744.1548410832953
+R2 Score (CV): -3.553624297618481
 ```
 ![image](https://github.com/CZunal/CS412-Course-Project/assets/73399460/d1ae4666-25b1-45f0-afb1-a981305b9358)
 
@@ -167,13 +167,13 @@ R2 Score (CV): 1.0
 
 #### Gradient Boosting Regression
 ```plaintext
-XGBoost - MSE Train: 0.0021904191782652427
-XGBoost - MSE TEST: 30.330423434854602
-XGBoost - R2 Train: 0.9999865964105298
-XGBoost - R2 TEST: 0.7298333288660587
+XGBoost - MSE Train: 0.022012364528882715
+XGBoost - MSE TEST: 141.72754318997497
+XGBoost - R2 Train: 0.9998653021757934
+XGBoost - R2 TEST: -0.26243072846869375
 
-Cross-Validation R2 Scores: [0.99046837 0.66777219 0.55252456 0.97269405 0.79382785]
-Mean R2 Score: 0.7954574044560845
+Cross-Validation R2 Scores: [-1.10587873 -0.13118338 -8.12836632 -0.51004095 -1.72988704]
+Mean R2 Score: -2.3210712836062344
 ```
 ![image](https://github.com/CZunal/CS412-Course-Project/blob/Gradient-Boosting-Regression/output.png)
 
